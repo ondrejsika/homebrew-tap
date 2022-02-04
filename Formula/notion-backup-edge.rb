@@ -5,20 +5,20 @@
 class NotionBackupEdge < Formula
   desc "notion-backup"
   homepage "https://github.com/ondrejsika/notion-backup"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.1.0/notion-backup_v0.1.0_darwin_arm64.tar.gz"
-      sha256 "c6d99d33c9d3d3c8bc6e90e623f41268ce91f140c29f153c1f4c1c00106ce261"
+      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.2.0/notion-backup_v0.2.0_darwin_arm64.tar.gz"
+      sha256 "8ea2a171d393cbac0918a8413350e486fe24b25b63c01eeda7da131c82e87bb7"
 
       def install
         bin.install "notion-backup"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.1.0/notion-backup_v0.1.0_darwin_amd64.tar.gz"
-      sha256 "e826ef3aa5bff122bc408278cd870d33c86689e97b330435115013a07702bfe4"
+      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.2.0/notion-backup_v0.2.0_darwin_amd64.tar.gz"
+      sha256 "7d8bad18bf491c666c923cbcda84fb7dabb109f49b3c94e1632f2741e2c77271"
 
       def install
         bin.install "notion-backup"
@@ -28,16 +28,16 @@ class NotionBackupEdge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.1.0/notion-backup_v0.1.0_linux_arm64.tar.gz"
-      sha256 "c7955ab53ab4959689b71ce00fbe8c58b077f7544941141d3624b7fcbfbbdba6"
+      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.2.0/notion-backup_v0.2.0_linux_arm64.tar.gz"
+      sha256 "1ae0b46fe112ef518b4b51f29eb77ead9c27105e1406e3f5f6d44f33dad3b794"
 
       def install
         bin.install "notion-backup"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.1.0/notion-backup_v0.1.0_linux_amd64.tar.gz"
-      sha256 "6c733ee22ddcd7c98879532cf44c25d353e92140d5936d781d67f7f60b38acab"
+      url "https://github.com/ondrejsika/notion-backup/releases/download/v0.2.0/notion-backup_v0.2.0_linux_amd64.tar.gz"
+      sha256 "dddc7291f22362fab29afc097315fa9a8809411e8c71c3c5dd3467922c7fb8d4"
 
       def install
         bin.install "notion-backup"
