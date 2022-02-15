@@ -5,20 +5,20 @@
 class TrainingCliEdge < Formula
   desc "training-cli"
   homepage "https://github.com/ondrejsika/training-cli"
-  version "0.1.0-dev-3"
+  version "0.1.0-dev-4"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-3/training-cli_v0.1.0-dev-3_darwin_arm64.tar.gz"
-      sha256 "ce0c1b684e85ba79b94b7de2d81ca66ffa3df55a5fe17417a83720ed84d24536"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-4/training-cli_v0.1.0-dev-4_darwin_arm64.tar.gz"
+      sha256 "ba2fff91a11d884d12b7d71156b825ab252b344046bbe29d1c5184137d9fdbb0"
 
       def install
         bin.install "training-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-3/training-cli_v0.1.0-dev-3_darwin_amd64.tar.gz"
-      sha256 "2656b4ce27f1d3b73e73944a7314b3a780a4095b11554b2db115615fcea8fd49"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-4/training-cli_v0.1.0-dev-4_darwin_amd64.tar.gz"
+      sha256 "73131b2c24991235ec33e6c60ccdae57055f72f1e66893ce9b84d081da3b3336"
 
       def install
         bin.install "training-cli"
@@ -28,16 +28,16 @@ class TrainingCliEdge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-3/training-cli_v0.1.0-dev-3_linux_arm64.tar.gz"
-      sha256 "d84196af50f47dc07e7efe3bdaa54666f96c051b8476ede44d1b613119227476"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-4/training-cli_v0.1.0-dev-4_linux_arm64.tar.gz"
+      sha256 "fac3758117ce942efeecdcc41fa24b91df261c20fd38b4688bf7dd86e1894b56"
 
       def install
         bin.install "training-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-3/training-cli_v0.1.0-dev-3_linux_amd64.tar.gz"
-      sha256 "4980b5e30ec330273dde76f1747d5d04fb4b9998caba1321076d6cb26a5aa7fc"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.1.0-dev-4/training-cli_v0.1.0-dev-4_linux_amd64.tar.gz"
+      sha256 "98e06842e4987f949ae8b15d90ca7dd7af953db873c8d799b41fd33c905dbfe4"
 
       def install
         bin.install "training-cli"
