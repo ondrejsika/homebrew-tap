@@ -5,20 +5,20 @@
 class TrainingCli < Formula
   desc "training-cli"
   homepage "https://github.com/ondrejsika/training-cli"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.2.0/training-cli_v0.2.0_darwin_arm64.tar.gz"
-      sha256 "1bfa611b23bbd060ecb7c203a386f2bc9b4bae2f5ba0f9f4146dc727f46993ea"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.3.0/training-cli_v0.3.0_darwin_arm64.tar.gz"
+      sha256 "7a7291dfbfaf2120d1350e465c933f762c66300312d66e63f9db9cad4851e12a"
 
       def install
         bin.install "training-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.2.0/training-cli_v0.2.0_darwin_amd64.tar.gz"
-      sha256 "c75638e87eb16310d2e52e5709e0d4d4aed5b668a4496df507cc804110026cbe"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.3.0/training-cli_v0.3.0_darwin_amd64.tar.gz"
+      sha256 "8f11f4dc9c9669d83ce633e9df4aa7db2403a203f7b88c519eb2400c5cd60847"
 
       def install
         bin.install "training-cli"
@@ -28,16 +28,16 @@ class TrainingCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.2.0/training-cli_v0.2.0_linux_arm64.tar.gz"
-      sha256 "3072ed4afca84c80b632908606862732db7e96f5a4d609e0539e020945ba3f55"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.3.0/training-cli_v0.3.0_linux_arm64.tar.gz"
+      sha256 "43aad7e44ba773d76ac902e70b0b01afc80169fc88d10f58b1e0231593afba9c"
 
       def install
         bin.install "training-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.2.0/training-cli_v0.2.0_linux_amd64.tar.gz"
-      sha256 "9bcee7192072201af9f9f775630ececee8cc00ca39a64ee55573f66b30c36fa7"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.3.0/training-cli_v0.3.0_linux_amd64.tar.gz"
+      sha256 "209f340cb2cc8e11af342ffd85d463f66bbeacc49787987ca72f228512504c92"
 
       def install
         bin.install "training-cli"
