@@ -5,20 +5,20 @@
 class TrainingCliEdge < Formula
   desc "training-cli"
   homepage "https://github.com/ondrejsika/training-cli"
-  version "0.5.0-dev-6"
+  version "0.5.0-dev-7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-6/training-cli_v0.5.0-dev-6_darwin_arm64.tar.gz"
-      sha256 "be7415ba07613269f609612f4b31e5434a533859eca53c651a8c6db78302911b"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-7/training-cli_v0.5.0-dev-7_darwin_arm64.tar.gz"
+      sha256 "e7d8381324c678847ca83534efa0b4a330f499d77f8f37b443560748107cd525"
 
       def install
         bin.install "training-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-6/training-cli_v0.5.0-dev-6_darwin_amd64.tar.gz"
-      sha256 "314c2f1375faaa9da9e31a1114e9b4bb9c0f79b0f331950b890328de953b0ae5"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-7/training-cli_v0.5.0-dev-7_darwin_amd64.tar.gz"
+      sha256 "2814745b2e1faba0f47ba6dc32f388f1aea059ff8d6f75afbdfbfa533cdf3191"
 
       def install
         bin.install "training-cli"
@@ -28,16 +28,16 @@ class TrainingCliEdge < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-6/training-cli_v0.5.0-dev-6_linux_arm64.tar.gz"
-      sha256 "378b5c5ad22fbeafa2448a63e84ac657f68620ba142f21e0aeb5cf79d818ef9c"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-7/training-cli_v0.5.0-dev-7_linux_arm64.tar.gz"
+      sha256 "b4dd62726c417cfed8d1aa0d0e2d23a0f9bf6f152da026fc4e625aed3d08d41b"
 
       def install
         bin.install "training-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-6/training-cli_v0.5.0-dev-6_linux_amd64.tar.gz"
-      sha256 "99ed8f6c822516932ee2e41fccb89be231095b9ba67f2bb6e52f0cf0447b78f8"
+      url "https://github.com/ondrejsika/training-cli/releases/download/v0.5.0-dev-7/training-cli_v0.5.0-dev-7_linux_amd64.tar.gz"
+      sha256 "a45fd849dde5841c22cd85ea3758db00c95568f4bf4bda76442d02c1624d479c"
 
       def install
         bin.install "training-cli"
@@ -47,9 +47,10 @@ class TrainingCliEdge < Formula
 
   conflicts_with "training-cli"
 
-  def caveats; <<~EOS
-    How to use this binary: https://github.com/ondrejsika/training-cli
-  EOS
+  def caveats
+    <<~EOS
+      How to use this binary: https://github.com/ondrejsika/training-cli
+    EOS
   end
 
   test do
