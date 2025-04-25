@@ -5,20 +5,20 @@
 class Hellogophercamptest < Formula
   desc "hellogophercamptest"
   homepage "https://github.com/ondrejsika/hellogophercamptest"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.2.0/hellogophercamptest_v0.2.0_darwin_amd64.tar.gz"
-      sha256 "d9c9e518c241a419b6c518bacf938e0710caa54b8a7afe1614224deac6917397"
+      url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.3.0/hellogophercamptest_v0.3.0_darwin_amd64.tar.gz"
+      sha256 "591938f61695d526728d46c77f38612c614c3c8f88643fc237558f0ede2b458c"
 
       def install
         bin.install "hellogophercamptest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.2.0/hellogophercamptest_v0.2.0_darwin_arm64.tar.gz"
-      sha256 "d97ba0c0c77b92fcdf49240027ace7ab19ebdb83dd047a0cda2b44978be1e51d"
+      url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.3.0/hellogophercamptest_v0.3.0_darwin_arm64.tar.gz"
+      sha256 "237c68c079cf514042fe8aa830de65c5b1de02c0b05891c3d01bd4c7ea5ffaef"
 
       def install
         bin.install "hellogophercamptest"
@@ -29,8 +29,8 @@ class Hellogophercamptest < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.2.0/hellogophercamptest_v0.2.0_linux_amd64.tar.gz"
-        sha256 "4c4bc1376fa31c5268fe51442de2b94db2deef266800def4d9931f5e0aa70ea2"
+        url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.3.0/hellogophercamptest_v0.3.0_linux_amd64.tar.gz"
+        sha256 "0e81c9164201fa31ad72c32b3d9d315872acf62ef9e92c399a51d86cfd5c3113"
 
         def install
           bin.install "hellogophercamptest"
@@ -39,8 +39,8 @@ class Hellogophercamptest < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.2.0/hellogophercamptest_v0.2.0_linux_arm64.tar.gz"
-        sha256 "d39b12b74296cdc4a686d2499a4bf023aafe6ed94202047868ff0ae67ed78505"
+        url "https://github.com/ondrejsika/hellogophercamptest/releases/download/v0.3.0/hellogophercamptest_v0.3.0_linux_arm64.tar.gz"
+        sha256 "934376e46d49bbf36dd0d89e60bb48ed15cf5a87e74a816a05beedbd29161d74"
 
         def install
           bin.install "hellogophercamptest"
