@@ -5,20 +5,20 @@
 class Master < Formula
   desc "master"
   homepage "https://github.com/ondrejsika/master"
-  version "2025.6.0"
+  version "2025.6.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.0/master_v2025.6.0_darwin_amd64.tar.gz"
-      sha256 "655da9fe7b57434fa3fe1df1fa352634be1ce4336086032a51230bc7fbadbe9c"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.1/master_v2025.6.1_darwin_amd64.tar.gz"
+      sha256 "fc10f153b22979f16273d6b822b2c8ab9cd9ea6a45c2064e7519907e3e7fc035"
 
       def install
         bin.install "master"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.0/master_v2025.6.0_darwin_arm64.tar.gz"
-      sha256 "bc4062233b855d4e3c637d4c4fd82ded6496ea4f934382c24d752b83156c099c"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.1/master_v2025.6.1_darwin_arm64.tar.gz"
+      sha256 "a648e68b39f52346cc905e1e29b1625bf69147dd0a4eb75b1d326b2c37dfaede"
 
       def install
         bin.install "master"
@@ -28,15 +28,15 @@ class Master < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.0/master_v2025.6.0_linux_amd64.tar.gz"
-      sha256 "8efbb3756a7dba0dfbefec20b3c335afcd260511afdf51832c9cace831a317bd"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.1/master_v2025.6.1_linux_amd64.tar.gz"
+      sha256 "2ca054e27a154ac9a5023836385a11a38bb1923eb346c5d8266fb7a27053cacb"
       def install
         bin.install "master"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.0/master_v2025.6.0_linux_arm64.tar.gz"
-      sha256 "af80890d0985d2077aeb92c1e8f6658a8e62c1aab9f21bca0e7a9f9d6a765673"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.1/master_v2025.6.1_linux_arm64.tar.gz"
+      sha256 "35ec9421a1eb6353e2c4d9db60dc119615527fa51fdf1efe8cb6fc2a4b45179d"
       def install
         bin.install "master"
       end
