@@ -5,20 +5,20 @@
 class Master < Formula
   desc "master"
   homepage "https://github.com/ondrejsika/master"
-  version "2025.6.9"
+  version "2025.6.10"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.9/master_v2025.6.9_darwin_amd64.tar.gz"
-      sha256 "8b939e55fe74fa37dd6f1782d4219301598fde60ec5e44080432d04f70f0b62c"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.10/master_v2025.6.10_darwin_amd64.tar.gz"
+      sha256 "ca001887856334d740097959b229795988abd0477c7c598e81a32604ac120db7"
 
       def install
         bin.install "master"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.9/master_v2025.6.9_darwin_arm64.tar.gz"
-      sha256 "a561d0da6374323268c3bffb2886d55dc44cc70fcdbd62ccaafd6919078f1eb4"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.10/master_v2025.6.10_darwin_arm64.tar.gz"
+      sha256 "27901aeae8ba8a88f543e64a0510bb728184ee4596e9b45adfc70ded8dfa4a1d"
 
       def install
         bin.install "master"
@@ -28,15 +28,15 @@ class Master < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.9/master_v2025.6.9_linux_amd64.tar.gz"
-      sha256 "7f3fce9ed0c68c4e0d3b973e0ebc6853acb97418fae29a05b4bacedca574e68f"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.10/master_v2025.6.10_linux_amd64.tar.gz"
+      sha256 "96b911f1ef673b826e0b9adfbaa9af4eab08071564c86799ed14f1e9ef84ed99"
       def install
         bin.install "master"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.6.9/master_v2025.6.9_linux_arm64.tar.gz"
-      sha256 "7af8d1448554a776468419d1d5f68ca3d40abc7e434d1c7bf94d05813aa52f5d"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.6.10/master_v2025.6.10_linux_arm64.tar.gz"
+      sha256 "2ea48831c73dc6c314cd47255b0d30fdc91aa284d3532986539a9e7ae46f54b8"
       def install
         bin.install "master"
       end
