@@ -5,20 +5,20 @@
 class Master < Formula
   desc "master"
   homepage "https://github.com/ondrejsika/master"
-  version "2025.8.1"
+  version "2025.9.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.8.1/master_v2025.8.1_darwin_amd64.tar.gz"
-      sha256 "fdc202e2f6dc6faa3b63f34cf3e50fb3a7407d2b649fa4f829950deaa9994034"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.9.0/master_v2025.9.0_darwin_amd64.tar.gz"
+      sha256 "ebbd92d49e92645ac23900c7fd4e4852e41fe24e5c0ec2f77dd638e2c7899cb2"
 
       def install
         bin.install "master"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.8.1/master_v2025.8.1_darwin_arm64.tar.gz"
-      sha256 "9d5ee4d50197a46ea2bef902e2b17c63077e9067737239c965b3a6eaa8286152"
+      url "https://github.com/ondrejsika/master/releases/download/v2025.9.0/master_v2025.9.0_darwin_arm64.tar.gz"
+      sha256 "d57af8791160d605ca9f85276ce0139c0fc6068cde882695631d5f15fe20f47f"
 
       def install
         bin.install "master"
@@ -27,16 +27,16 @@ class Master < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.8.1/master_v2025.8.1_linux_amd64.tar.gz"
-      sha256 "e2351b9a5edfe628bca7e76e504439fa36c6dbf369a276c7bb216a93fb2b14a7"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ondrejsika/master/releases/download/v2025.9.0/master_v2025.9.0_linux_amd64.tar.gz"
+      sha256 "37e552982a977968f27a6a00b8b013d858789281b70ed1312a634b2afe04f926"
       def install
         bin.install "master"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/ondrejsika/master/releases/download/v2025.8.1/master_v2025.8.1_linux_arm64.tar.gz"
-      sha256 "e45fe953c8a4188ff8429ff20860b874d29ac4d47092033f67ffb97c10ddc949"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/ondrejsika/master/releases/download/v2025.9.0/master_v2025.9.0_linux_arm64.tar.gz"
+      sha256 "a3508453e63ca076c4034b5de19061fac38fba9f0a167092f9ce800d5992994b"
       def install
         bin.install "master"
       end
